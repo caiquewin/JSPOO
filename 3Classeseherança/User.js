@@ -12,14 +12,13 @@ export class User {
         this.#role = role || "estudante",
         this.#ativo = ativo
     }
-    #ObjUser(){
-        return({
-            name:this.#name,
-            email:this.#email,
-            nascimento:this.#nascimento,
-            role:this.#role
-        })
-    }
+ 
+    get nome() {return this.#name}   
+    get email() {return this.#email}   
+    get nascimento() {return this.#nascimento}   
+    get role() {return this.#role}   
+    get ativo() {return this.#ativo}   
+    
     showUser() {
         const {name,email} =this.#ObjUser()
         return `Nome:${name}\nEmail:${email}`

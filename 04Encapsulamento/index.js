@@ -9,4 +9,6 @@ import { Docente } from '../3Classeseherança/Docente.js';
 import { User } from '../3Classeseherança/User.js';
 
 const PauloPrivate = new Admin('Paulo','paulo@gmail.com','01-01-1996')
-console.log(PauloPrivate.showUser())
+// console.log(PauloPrivate.showUser())
+
+console.log(PauloPrivate.nome)
