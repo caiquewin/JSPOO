@@ -29,5 +29,8 @@ const admin = {
 Object.setPrototypeOf(admin,user)
 //iremos herda os metodos do user Primeiero que vai herda e o segundo metodo e quem vai ceder os metodos
 
+
+// isso que nós fizemos se chama cadeia de protópipo pois ela quando vai acessar o admin.exibirInfos, o js verifica que nao existe essa função,
+// então depois verificamos se ele está herdando de algum objeto os metodos
 admin.CriarCurso()
 admin.exibirInfos()
