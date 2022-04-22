@@ -14,3 +14,7 @@ class User {
 const NovoUser = new User('Caique','caiquewin@gmail.com','1997/12/06','admin')
 console.log(NovoUser)
 console.log(NovoUser.exibirInfos())
+
+//verificando se a classe NovoUser é um protótipo da classe User
+
+console.log(User.prototype.isPrototypeOf(NovoUser))//true
