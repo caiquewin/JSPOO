@@ -13,15 +13,28 @@ export class User {
         this.#ativo = ativo
     }
  
-    get nome() {return this.#name}   
-    get email() {return this.#email}   
-    get nascimento() {return this.#nascimento}   
-    get role() {return this.#role}   
-    get ativo() {return this.#ativo}   
+    get name() {
+        return this.#name
+    }   
+    set name(newName){
+        if(newName==='')throw new Error('Nome vazio')
+        this.#name=newName
+    }
+    get email() {
+        return this.#email
+    }   
+    get nascimento() {
+        return this.#nascimento
+    }   
+    get role() {
+        return this.#role
+    }   
+    get ativo() {
+        return this.#ativo
+    }   
     
     showUser() {
-        const {name,email} =this.#ObjUser()
-        return `Nome:${name}\nEmail:${email}`
+        return `Nome:${this.name}\nEmail:${email}`
 
     }
 }

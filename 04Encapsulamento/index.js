@@ -10,5 +10,7 @@ import { User } from '../3Classeseherança/User.js';
 
 const PauloPrivate = new Admin('Paulo','paulo@gmail.com','01-01-1996')
 // console.log(PauloPrivate.showUser())
+console.log(PauloPrivate.name)
 
-console.log(PauloPrivate.nome)
+PauloPrivate.name=''
+console.log(PauloPrivate.name)
