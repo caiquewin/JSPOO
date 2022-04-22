@@ -74,3 +74,12 @@ const novoUser = Object.create(user)
 novoUser.init("Caique","caique@gmail.com")
 
 console.log(novoUser.exibirInfo())
+
+
+//Por existe dois modos ??
+
+// Object.Create ele faz mas sentindo no modelo de protótipo do que usar o construtor
+
+// o construtor com a palavra new faz mas sentido no modelo de classe 
+
+// porem na vida real nos não atribuimos em prototaipe 
